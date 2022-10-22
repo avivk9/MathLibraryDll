@@ -44,6 +44,15 @@ extern "C" MATHLIBRARY_API unsigned long long fibonacci_current();
 // Get the position of the current value in the sequence.
 extern "C" MATHLIBRARY_API unsigned fibonacci_index();
 
+// Returns the maximum between two integers
 extern "C" MATHLIBRARY_API int myMax(int x, int y);
 
+// Returns the minimun between two integers
 extern "C" MATHLIBRARY_API int myMin(int x, int y);
+
+// Array QuickSort
+// Time complexity - avg of O(nlog(n)), worst case will be n^2
+// Space complexity - O(nlog(n))
+extern "C" MATHLIBRARY_API void quickSort(int arr[]);
+
+extern "C" MATHLIBRARY_API void mergeSort(int arr[]);
